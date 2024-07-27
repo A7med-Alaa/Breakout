@@ -386,10 +386,14 @@
       <SDLCheck>true</SDLCheck>
       <LinkCompiled>true</LinkCompiled>
     </ClCompile>
+    <ClCompile Include="src\ResourceManager.cpp" />
+    <ClCompile Include="Textures\Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Shaders\Shader.h" />
     <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\ResourceManager.h" />
+    <ClInclude Include="Textures\Texture.h" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Shaders\fragment.frag" />

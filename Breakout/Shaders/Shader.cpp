@@ -1,8 +1,6 @@
 ﻿#include "Shader.h"
 #include <gl/glew.h>
 #include <iostream>
-#include <fstream>
-#include <sstream>
 
 int Shader::GetUniformLocation(const char* name)
 {
@@ -38,12 +36,8 @@ void Shader::checkForErrors(int shader, const char* type) const
     }
 }
 
-Shader::Shader(std::string vShaderPath, std::string fShaderPath, std::string gShaderPath)
+Shader::Shader(const char* vShader, const char* fShader, const char* gShader)
 {
-    const char *vShader = LoadShaderFromFile("vertex.vert");
-    const char *fShader = LoadShaderFromFile("vertex.vert");
-    const char *gShader = !gShaderPath.empty() ? LoadShaderFromFile("geometry") : "";
-
     int geometryShader = 0;
     
     int vertexShader = glCreateShader(GL_VERTEX_SHADER);
@@ -58,7 +52,7 @@ Shader::Shader(std::string vShaderPath, std::string fShaderPath, std::string gSh
 
     checkForErrors(fragmentShader, "Fragment Shader");
 
-    if(!gShaderPath.empty())
+    if(gShader == NULL)
     {
         geometryShader = glCreateShader(GL_GEOMETRY_SHADER);
         glShaderSource(geometryShader, 1, &gShader, nullptr);
@@ -70,30 +64,13 @@ Shader::Shader(std::string vShaderPath, std::string fShaderPath, std::string gSh
     m_programID = glCreateProgram();
     glAttachShader(m_programID, vertexShader);
     glAttachShader(m_programID, fragmentShader);
-    if(!gShaderPath.empty()) glAttachShader(m_programID, geometryShader);
+    if(gShader != NULL) glAttachShader(m_programID, geometryShader);
     glLinkProgram(m_programID);
     checkForErrors(m_programID, "program");
 
     glDeleteShader(vertexShader);
     glDeleteShader(fragmentShader);
-    if(!gShaderPath.empty()) glDeleteShader(geometryShader);
-}
-
-const char* Shader::LoadShaderFromFile(const char* filePath) const
-{
-    std::string shaderSource;
-    std::ifstream ShaderFile(filePath);
-    try
-    {
-        std::stringstream shaderstream;
-        shaderstream << ShaderFile.rdbuf();
-        shaderSource = shaderstream.str();
-        ShaderFile.close();
-    } catch (std::ifstream::failure& e)
-    {
-        std::cout << "Failed to read file" << e.what();
-    }
-    return shaderSource.c_str();
+    if(gShader != NULL) glDeleteShader(geometryShader);
 }
 
 void Shader::Use() const
