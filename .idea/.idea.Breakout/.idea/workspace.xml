@@ -7,7 +7,72 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="73f4cece-25a6-48b3-b0d7-a350ff46a2f1" name="Changes" comment="" />
+    <list default="true" id="73f4cece-25a6-48b3-b0d7-a350ff46a2f1" name="Changes" comment="Project Created.">
+      <change afterPath="$PROJECT_DIR$/Breakout/src/Game.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Breakout/src/Game.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Breakout/x64/Debug/Breakout.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Breakout/x64/Debug/Breakout.tlog/CL.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Breakout/x64/Debug/Breakout.tlog/CL.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Breakout/x64/Debug/Breakout.tlog/CL.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Breakout/x64/Debug/Game.obj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Breakout/x64/Debug/vc143.idb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Breakout/x64/Debug/vc143.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/intermediate/x64/Debug/Breakout.tlog/Breakout.lastbuildstate" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/intermediate/x64/Debug/Breakout.tlog/link.command.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/intermediate/x64/Debug/Breakout.tlog/link.read.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/intermediate/x64/Debug/Breakout.tlog/link.write.1.tlog" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/x64Debug/Breakout.pdb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/GL/eglew.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/GL/glew.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/GL/glxew.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/GL/wglew.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/GLFW/glfw3.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/GLFW/glfw3native.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/glm.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/bitfield.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/bitfield.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/color_space.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/color_space.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/constants.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/constants.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/epsilon.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/epsilon.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/integer.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/integer.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/matrix_access.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/matrix_access.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/matrix_integer.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/matrix_inverse.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/matrix_inverse.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/matrix_transform.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/matrix_transform.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/noise.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/noise.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/packing.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/packing.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/quaternion.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/quaternion.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/quaternion_simd.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/random.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/random.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/reciprocal.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/round.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/round.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/type_aligned.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/type_precision.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/type_precision.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/type_ptr.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/type_ptr.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/ulp.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/ulp.inl" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/glm/gtc/vec1.hpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/include/stb/stb_image.h" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/lib/glew32s.lib" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/dependencies/lib/glfw3.lib" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Breakout/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Breakout/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Breakout/Breakout.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Breakout/src/Breakout.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Breakout/Breakout.vcxproj" beforeDir="false" afterPath="$PROJECT_DIR$/Breakout/Breakout.vcxproj" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -16,19 +81,26 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/dependencies/include/GL/glew.h" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "customColor": "",
   "associatedIndex": 6
 }]]></component>
   <component name="ProjectId" id="2joDPsD3G2JOJCxIFG3zJG7ZyIz" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "C++ Project.Breakout.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -112,8 +184,17 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1722044515184</updated>
-      <workItem from="1722044517571" duration="617000" />
+      <workItem from="1722044517571" duration="4161000" />
     </task>
+    <task id="LOCAL-00001" summary="Project Created.">
+      <option name="closed" value="true" />
+      <created>1722045175393</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1722045175393</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +214,9 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="Project Created." />
+    <option name="LAST_COMMIT_MESSAGE" value="Project Created." />
   </component>
 </project>
