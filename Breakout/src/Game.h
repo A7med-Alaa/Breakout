@@ -1,6 +1,5 @@
 ﻿#pragma once
-#include <GL/glew.h>
-#include <GLFW/glfw3.h>
+#include "SpriteRenderer.h"
 
 enum GameState
 {
@@ -12,14 +11,14 @@ enum GameState
 class Game
 {
 private:
-    unsigned int WIDTH;
-    unsigned int HEIGHT;
+    const float WIDTH;
+    const float HEIGHT;
 
 public:
     GameState state;
     bool Keys[1024];
     
-    Game(unsigned int width, unsigned int height);
+    Game(float width, float height);
     ~Game();
 
     void Init();

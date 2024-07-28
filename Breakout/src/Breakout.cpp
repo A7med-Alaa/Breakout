@@ -1,16 +1,17 @@
 #include <iostream>
-
+#include <GL/glew.h>
+#include <GLFW/glfw3.h>
 #include "Game.h"
-
+#include "ResourceManager.h"
 //CONSTANTS
-constexpr unsigned int WIDTH = 1280;
-constexpr unsigned int HEIGHT = 720;
+const int WIDTH = 1280;
+const int HEIGHT = 720;
 
 //CALLBACKS
 void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods);
 
 //GAME
-Game Breakout(WIDTH, HEIGHT);
+Game Breakout(1280.0f, 720.0f);
 
 int main(int argc, char* argv[])
 {
@@ -49,13 +50,12 @@ int main(int argc, char* argv[])
     glEnable(GL_BLEND);
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
     //DELTA TIME
-    float deltaTime = 0.0f;
     float lastFrame = 0.0f;
     
     while (!glfwWindowShouldClose(window))
     {
         float currentFrame = (float)glfwGetTime();
-        deltaTime = currentFrame - lastFrame;
+        float deltaTime = currentFrame - lastFrame;
         lastFrame = currentFrame;
         glfwPollEvents();
 
@@ -70,6 +70,7 @@ int main(int argc, char* argv[])
         glfwSwapBuffers(window);
     }
 
+    ResourceManager::Clean();
     glfwTerminate();
     return 0;
 }
