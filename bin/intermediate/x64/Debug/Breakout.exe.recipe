@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>C:\Users\hp\Desktop\Programming\C\Breakout\bin\x64\Debug\Breakout.exe</FullPath>
+      <FullPath>D:\vsprojects\Breakout\bin\x64\Debug\Breakout.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />

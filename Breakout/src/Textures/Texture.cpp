@@ -1,9 +1,6 @@
 ﻿#include "Texture.h"
 
-#include <iostream>
 #include <GL/glew.h>
-
-#include "../Shaders/Shader.h"
 
 void Texture::Generate(int width, int height, unsigned char* data)
 {

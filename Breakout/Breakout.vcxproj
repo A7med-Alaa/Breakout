@@ -166,6 +166,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\GameLevel.cpp" />
+    <ClCompile Include="src\GameObject.cpp" />
     <ClCompile Include="src\Breakout.cpp">
       <RuntimeLibrary>MultiThreadedDebugDll</RuntimeLibrary>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -318,6 +320,8 @@
     <ClCompile Include="src\Textures\Texture.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="src\GameLevel.h" />
+    <ClInclude Include="src\GameObject.h" />
     <ClInclude Include="src\Game.h" />
     <ClInclude Include="src\ResourceManager.h" />
     <ClInclude Include="src\Shaders\Shader.h" />
@@ -328,6 +332,11 @@
     <Content Include="src\fragment.frag" />
     <Content Include="src\hello.png" />
     <Content Include="src\vertex.vert" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\hp\Desktop\Programming\C\Breakout\Breakout\src\background.jpg" />
+    <Image Include="C:\Users\hp\Desktop\Programming\C\Breakout\Breakout\src\block.png" />
+    <Image Include="C:\Users\hp\Desktop\Programming\C\Breakout\Breakout\src\block_solid.png" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

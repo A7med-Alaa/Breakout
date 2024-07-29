@@ -4,6 +4,7 @@
 #include <sstream>
 #include <GL/glew.h>
 #define STB_IMAGE_IMPLEMENTATION
+#define STBI_FAILURE_USERMSG
 #include <stb/stb_image.h>
 
 std::map<std::string, Shader> ResourceManager::Shaders;
@@ -75,8 +76,8 @@ Texture ResourceManager::LoadTextureFromImage(const char* path, bool alpha)
 
     if(stbi_failure_reason())
     {
-        std::cout << "Error:\n";
-        std::cout << "\n" << stbi_failure_reason() << "\n";
+        std::cout << "\nError stbi_failure: ";
+        std::cout << stbi_failure_reason() << "\n";
     }
     
     if(data)

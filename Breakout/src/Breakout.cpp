@@ -61,7 +61,7 @@ int main(int argc, char* argv[])
 
         Breakout.Update(deltaTime);
 
-        Breakout.processInput();
+        Breakout.processInput(deltaTime);
 
         glClearColor(0.0f, 0.0f, 0.0f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT);
@@ -82,8 +82,15 @@ void keyCallback(GLFWwindow* window, int key, int scancode, int action, int mods
         glfwSetWindowShouldClose(window, true);
     }
 
-    if(key > 0 && key < 1024 && action == GLFW_PRESS)
+    if(key >= 0 && key < 1024)
     {
-        Breakout.Keys[key] = true;
+        if (action == GLFW_PRESS) 
+        {
+            Breakout.Keys[key] = true;
+        }
+        else if(action == GLFW_RELEASE)
+        {
+            Breakout.Keys[key] = false;
+        }
     }
 }
