@@ -13,8 +13,8 @@ Game::Game(float width, float height)
 Game::~Game()
 {
     delete renderer;
+    delete player;
 }
-
 
 void Game::Init()
 {
