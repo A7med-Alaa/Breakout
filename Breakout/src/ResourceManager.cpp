@@ -4,7 +4,6 @@
 #include <sstream>
 #include <GL/glew.h>
 #define STB_IMAGE_IMPLEMENTATION
-#define STBI_FAILURE_USERMSG
 #include <stb/stb_image.h>
 
 std::map<std::string, Shader> ResourceManager::Shaders;

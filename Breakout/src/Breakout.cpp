@@ -3,6 +3,7 @@
 #include <GLFW/glfw3.h>
 #include "Game.h"
 #include "ResourceManager.h"
+
 //CONSTANTS
 const int WIDTH = 1280;
 const int HEIGHT = 720;

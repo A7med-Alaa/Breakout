@@ -1,7 +1,6 @@
 #pragma once
 
 #include "GameObject.h"
-#include <glm/glm.hpp>
 
 struct BallObject : public GameObject
 {

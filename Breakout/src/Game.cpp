@@ -2,7 +2,6 @@
 
 #include "ResourceManager.h"
 #include "GLFW/glfw3.h"
-#include <iostream>
 
 SpriteRenderer* renderer;
 
@@ -18,6 +17,7 @@ Game::~Game()
 {
     delete renderer;
     delete player;
+    delete ball;
 }
 
 void Game::Init()
