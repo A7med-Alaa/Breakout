@@ -2,7 +2,7 @@
 My First C++ Game using OpenGL 3.3.
 
 External Libraries I used:
-- GLEW (OpenGL Functions Implementation)
+- GLEW (OpenGL Extension loader)
 - GLFW (Window management)
 
 ### Note: Game is only available for x64 Windows systems.
