@@ -8,4 +8,4 @@ External Libraries I used:
 ### Note: Game is only available for x64 Windows systems.
 Tested on x64 Windows 11 platform.
 
-## Press <Space> To Start the Game.
+## Press Space To Start the Game.
